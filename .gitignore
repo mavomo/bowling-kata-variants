@@ -1,0 +1,12 @@
+
+/.idea/
+.gitignore
+.idea/.name
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/uiDesigner.xml
+.idea/workspace.xml
+ocp.iml
+pom.xml
+src/
