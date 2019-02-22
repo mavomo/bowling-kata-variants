@@ -1,6 +1,7 @@
 package fr.soat.cleancoders.ocp.shapes.ocp_compliant;
 
 import fr.soat.cleancoders.ocp.shapes.domain.CircularShape;
+import fr.soat.cleancoders.ocp.shapes.domain.DiscShape;
 import fr.soat.cleancoders.ocp.shapes.domain.RectangularShape;
 import fr.soat.cleancoders.ocp.shapes.domain.Shape;
 import org.assertj.core.api.Assertions;
@@ -61,6 +62,16 @@ public class ShapeClientTest {
         int id = shapeUser.getShapeId();
 
         Assertions.assertThat(id).isEqualTo(2);
+    }
+
+    @Test
+    public void should_return_21_when_it_is_the_Disc_shape() {
+        Shape baseShape = new DiscShape();
+        ShapeClient shapeUser = new ShapeClient(baseShape);
+
+        int id = shapeUser.getShapeId();
+
+        Assertions.assertThat(id).isEqualTo(999);
     }
 
     @Test

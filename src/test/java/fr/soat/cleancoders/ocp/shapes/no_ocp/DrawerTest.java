@@ -28,6 +28,16 @@ public class DrawerTest {
         final int idRectangle = drawer.getShapeId();
 
         Assertions.assertThat(idRectangle).isEqualTo(2);
+
+    }
+   @Test
+    public void should_return_42_when_the_shape_is_a_rectangle() {
+        Shape starShape = new StarShape();
+        Drawer drawer = new Drawer(starShape);
+
+        final int idStar = drawer.getShapeId();
+
+        Assertions.assertThat(idStar).isEqualTo(42);
     }
 
     @Test
@@ -39,5 +49,12 @@ public class DrawerTest {
         final int idDisc = drawer.getShapeId();
 
         Assertions.assertThat(idDisc).isEqualTo(999);
+    }
+
+    private class StarShape extends Shape {
+        @Override
+        public String getShapeType() {
+            return "star";
+        }
     }
 }

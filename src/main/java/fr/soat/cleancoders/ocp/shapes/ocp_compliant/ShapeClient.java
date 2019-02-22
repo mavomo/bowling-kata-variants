@@ -12,6 +12,8 @@ class ShapeClient {
 
     ShapeClient(Shape baseShape) {
         this.baseShape = baseShape;
+
+        this.baseShape.move();
     }
 
     int getShapeId() {

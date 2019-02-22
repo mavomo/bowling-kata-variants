@@ -24,6 +24,9 @@ class Drawer {
 
         if (shape.getShapeType().equals("disc"))
             return 999;
+
+        if (shape.getShapeType().equals("star"))
+            return 42;
         return -1;
     }
 }

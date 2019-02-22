@@ -1,11 +1,23 @@
 package fr.soat.cleancoders.ocp.shapes.domain;
 
-public class Shape {
-    public String getShapeType() {
-        return "";
+public abstract class Shape {
+    public abstract String getShapeType();
+
+    public abstract int getShapeId();
+
+    public void move(){
+        final int shapeId = getShapeId();
+        drag(shapeId);
+        drop(shapeId);
+
+
     }
 
-    public int getShapeId() {
-        return -1;
+    private void drop(int shapeId) {
+        System.out.println("dsfsfdsfsfs");
+    }
+
+    private void drag(int shapeId) {
+        System.out.println("dskjfsjkfksdfjskfjds");
     }
 }
