@@ -20,7 +20,6 @@ class ShapeClient {
         return baseShape.getShapeId();
     }
 
-/////////////////////////////////////  moving shapes ////////////////////////////////////
     void move() {
         int shapeId = getShapeId();
         drag(shapeId);
