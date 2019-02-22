@@ -4,11 +4,11 @@ public class RectangularShape extends Shape {
 
     @Override
     public String getShapeType() {
-        throw new UnsupportedOperationException("");
+        return "rectangle";
     }
 
     @Override
     public int getShapeId() {
-        return 0;
+        return 2;
     }
 }

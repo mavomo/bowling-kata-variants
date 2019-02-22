@@ -5,36 +5,13 @@ import fr.soat.cleancoders.ocp.shapes.domain.DiscShape;
 import fr.soat.cleancoders.ocp.shapes.domain.RectangularShape;
 import fr.soat.cleancoders.ocp.shapes.domain.Shape;
 import org.assertj.core.api.Assertions;
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnit;
-import org.mockito.junit.MockitoRule;
-
-import java.io.PrintStream;
 
 public class ShapeClientTest {
 
-    @Rule
-    public MockitoRule mockitoRule = MockitoJUnit.rule();
-
-    @Mock
-    private PrintStream printStream;
-
-    @InjectMocks
-    private ShapeClient shapeClient;
-
-    @Before
-    public void setUp() {
-        System.setOut(printStream);
-    }
-
-
     @Test
     public void should_return_minus_one_when_it_is_the_base_shape() {
-        Shape baseShape = new Shape();
+        Shape baseShape = new DefaultShape();
         ShapeClient shape = new ShapeClient(baseShape);
 
         int id = shape.getShapeId();
@@ -83,5 +60,17 @@ public class ShapeClientTest {
 
 
 
+    }
+
+    private class DefaultShape extends Shape {
+        @Override
+        public String getShapeType() {
+            return "";
+        }
+
+        @Override
+        public int getShapeId() {
+            return -1;
+        }
     }
 }

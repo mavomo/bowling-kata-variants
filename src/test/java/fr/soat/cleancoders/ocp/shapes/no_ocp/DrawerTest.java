@@ -5,7 +5,6 @@ import fr.soat.cleancoders.ocp.shapes.domain.DiscShape;
 import fr.soat.cleancoders.ocp.shapes.domain.RectangularShape;
 import fr.soat.cleancoders.ocp.shapes.domain.Shape;
 import org.assertj.core.api.Assertions;
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class DrawerTest {
@@ -41,7 +40,6 @@ public class DrawerTest {
     }
 
     @Test
-    @Ignore
     public void should_return_999_when_the_shape_is_a_disc() {
         Shape disc = new DiscShape();
         Drawer drawer = new Drawer(disc);
@@ -55,6 +53,11 @@ public class DrawerTest {
         @Override
         public String getShapeType() {
             return "star";
+        }
+
+        @Override
+        public int getShapeId() {
+            return 0;
         }
     }
 }
