@@ -1,6 +1,6 @@
 package fr.soat.cleancoders.ocp.bowling_kata;
 
-import fr.soat.cleancoders.ocp.score_bowling.BowlingGame;
+import fr.soat.cleancoders.ocp.scoring_bowling.BowlingGame;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -92,7 +92,7 @@ public class ScoringBowlingShould {
         bowlingGame.roll(4);
         bowlingGame.roll(5);
 
-        rollSameNumberOfPinsTimes(16, 0);
+        rollSameNumberOfPinsTimes(17, 0);
 
         final int scoreOfTheGame = bowlingGame.scoreOfFrame(0);
 
@@ -108,7 +108,7 @@ public class ScoringBowlingShould {
         bowlingGame.roll(4);
         bowlingGame.roll(5);
 
-        rollSameNumberOfPinsTimes(16, 0);
+        rollSameNumberOfPinsTimes(17, 0);
 
         final int scoreOfTheGame = bowlingGame.score();
 

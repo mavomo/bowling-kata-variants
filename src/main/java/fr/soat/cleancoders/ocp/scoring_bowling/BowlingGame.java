@@ -1,4 +1,4 @@
-package fr.soat.cleancoders.ocp.score_bowling;
+package fr.soat.cleancoders.ocp.scoring_bowling;
 
 public class BowlingGame {
     private int currentRoll;
