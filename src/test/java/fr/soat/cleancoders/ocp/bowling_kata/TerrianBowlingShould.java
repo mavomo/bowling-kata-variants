@@ -4,9 +4,9 @@ import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ScoringBowlingShould {
+public class TerrianBowlingShould {
 
-    private final BowlingGame bowlingGame = new BowlingGame();
+    private final BowlingGame bowlingGame = new BowlingGame(21, 10);
 
     @Test
     public void return_a_score_of_0_for_a_frame_when_no_pin_is_knocked_down_after_two_roll() {
@@ -126,9 +126,6 @@ public class ScoringBowlingShould {
 
         assertThat(scoreOfTheGame).isEqualTo(300);
     }
-
-
-
 
 
     private void rollSameNumberOfPinsTimes(int limit, int pinsDown) {
