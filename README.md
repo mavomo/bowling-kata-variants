@@ -27,7 +27,7 @@ La contrainte de cette session est de coder le kata avec les règles de l'*OCP D
 	B. Non: Refactorez jusqu’à ce que cela devienne possible <br/> 
 
 ### Exemple avec le Bowling Kata
-#### cas de test 1 : le Gutter Game 
+#### Feature 1 : le Gutter Game 
     Nombre de lancées: 20 
     Score attendu : 0
 
@@ -35,7 +35,7 @@ La contrainte de cette session est de coder le kata avec les règles de l'*OCP D
     - Faire passer le cas de test
     - Ecrire le cas d'une quille touchée par lancée 
 
-#### cas de test 2: 1 quille touchée par lancée
+#### Feature 1: 1 quille touchée par lancée
     Nombre de lancées: 20 
     Score attendu : 20
     
@@ -51,6 +51,9 @@ Note: Pour tous les cas de tests voir [ici](http://codingdojo.org/kata/Bowling/)
 
 Pour varier les plaisirs, Matteo Vaccari, propose d'implémenter ces changements.
 Vous pouvez pour cela reprendre le code existant dans le package `BowlingGame` du repo.
+
+Chacune des règles est rappelé sur le [ppt](https://drive.google.com/open?id=1wVs1lMeXg4DLFbJ3pk2dqfugCHJJV3Sr) du "cours"
+
 
  
 
