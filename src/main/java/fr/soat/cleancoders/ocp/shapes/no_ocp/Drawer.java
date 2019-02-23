@@ -19,7 +19,7 @@ class Drawer {
         if (shape.getShapeType().equals("circle"))
             return 1;
 
-        if (shape.getShapeType().equals("rectangular"))
+        if (shape.getShapeType().equals("rectangle"))
             return 2;
 
         if (shape.getShapeType().equals("disc"))

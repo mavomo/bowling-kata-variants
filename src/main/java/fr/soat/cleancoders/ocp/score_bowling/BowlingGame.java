@@ -1,16 +1,16 @@
-package fr.soat.cleancoders.ocp.bowling_kata;
+package fr.soat.cleancoders.ocp.score_bowling;
 
-class BowlingGame {
+public class BowlingGame {
     private int currentRoll;
     private int[] rolls = new int[21];
     private int[] frames = new int[10];
 
-    int scoreOfFrame(int framePosition) {
+    public int scoreOfFrame(int framePosition) {
         this.score();
         return this.frames[framePosition];
     }
 
-    int score() {
+    public int score() {
         int rollIdx = 0;
         int score = 0;
         for (int currentFrame = 0; currentFrame < 10; currentFrame++) {
@@ -30,7 +30,7 @@ class BowlingGame {
         return score;
     }
 
-    void roll(int pinsDown) {
+    public void roll(int pinsDown) {
         this.rolls[this.currentRoll] = pinsDown;
         this.currentRoll++;
     }

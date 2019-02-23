@@ -1,5 +1,6 @@
 package fr.soat.cleancoders.ocp.bowling_kata;
 
+import fr.soat.cleancoders.ocp.score_bowling.BowlingGame;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
