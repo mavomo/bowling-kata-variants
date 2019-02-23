@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class TerrianBowlingShould {
 
-    private final BowlingGame bowlingGame = new BowlingGame(21, 10);
+    private final BowlingGame bowlingGame = new BowlingGame();
 
     @Test
     public void return_a_score_of_0_for_a_frame_when_no_pin_is_knocked_down_after_two_roll() {
@@ -83,7 +83,6 @@ public class TerrianBowlingShould {
                         " F2 is a normal game = R3 + R4 = 8")
                 .isEqualTo(22);
     }
-
 
     @Test
     public void add_the_number_of_pins_down_in_the_first_2_rolls_of_next_frame_when_there_score_frame_with_a_strike() {

@@ -5,13 +5,13 @@ class BowlingGame {
     private static final int MAX_BONUS_POINT = 10;
     private static final int MAX_ROLLS = 21;
     private int currentRoll;
-    private int[] rolls;
-    private int[] frames;
+    protected int[] rolls;
+    protected int[] frames;
 
 
-    public BowlingGame(int maxRolls, int maxFrames) {
-        this.rolls = new int[maxRolls];
-        this.frames = new int[maxFrames];
+    public BowlingGame() {
+        this.rolls = new int[MAX_ROLLS];
+        this.frames = new int[NB_FRAMES];
     }
 
     int scoreOfFrame(int framePosition) {
@@ -34,6 +34,7 @@ class BowlingGame {
                 }
                 rollIdx += 2;
             }
+
             this.getFrames()[currentFrame] = score;
         }
         return score;

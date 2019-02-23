@@ -2,16 +2,18 @@ package fr.soat.cleancoders.ocp.bowling_kata;
 
 class MartianBowling extends BowlingGame {
 
-    static final int TWELVE_FRAMES = 12;
+    static final int MAX_NB_FRAMES = 12;
     static final int MAX_ROLLS = 37;
 
     MartianBowling() {
-        super(MAX_ROLLS, TWELVE_FRAMES);
+        this.rolls = new int[MAX_ROLLS];
+        this.frames = new int[MAX_NB_FRAMES];
+
     }
 
     @Override
     protected int getTotalFrames() {
-        return TWELVE_FRAMES;
+        return MAX_NB_FRAMES;
     }
 
     @Override
